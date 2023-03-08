@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.MaterialToolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:elevation="0dp"
+    android:paddingStart="0dp"
+    android:paddingEnd="0dp"
+    app:contentInsetStart="0dp"
+    android:background="@color/back_color">
+
+    <!-- Add a custom view to contain the back arrow icon -->
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="start|center_vertical"
+            android:src="@drawable/ic_back"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/putatoe_wallet"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:textAllCaps="false"
+            android:layout_gravity="start|center_vertical"
+           android:textAppearance="?attr/actionMenuTextAppearance"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</com.google.android.material.appbar.MaterialToolbar>
