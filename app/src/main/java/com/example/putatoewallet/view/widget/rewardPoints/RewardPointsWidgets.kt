@@ -6,8 +6,8 @@ import android.view.LayoutInflater
 import android.widget.LinearLayout
 import com.example.putatoewallet.R
 
-class RewardPoints(context: Context, attrs: AttributeSet?) : LinearLayout(context, attrs) {
+class RewardPointsWidgets(context: Context, attrs: AttributeSet?) : LinearLayout(context, attrs) {
     init {
-        LayoutInflater.from(context).inflate(R.layout.reward_points, this, true)
+        LayoutInflater.from(context).inflate(R.layout.reward_points_widget, this, true)
     }
 }
